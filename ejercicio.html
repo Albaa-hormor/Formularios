@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="https://httpbin.org/get" method="get">
+    <fieldset style="background-color: blueviolet;">
+        <p>Datos personales</p>
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nom">
+
+        <label for="apellidos">Apellidos</label>
+        <input type="text" id="apellidos" name="apellidos">
+
+        <label for="edad">Edad</label>
+        <input type="number" id="edad" name="edad">
+
+        <label for="fechanacimiento">Fecha de nacimiento</label>
+        <input type="date" id="fechanacimiento" name="fechanacimiento">
+
+    </fieldset>
+    <fieldset style="background-color: rgb(150, 74, 221);">
+        <p>Datos de contacto</p>
+        <label for="Correo">Correo Electrónico</label>
+        <input type="email" id="correo" name="correo">
+
+        <label for="telefono">Teléfono</label>
+        <input type="tel" id="telefono" name="telefono">
+
+        <label for="provincias">Selecciona Provincia</label>
+
+        <select id="provincias" name="provincias">
+            <option value="Almeria">Almeria</option>
+            <option value="Granada">Granada</option>
+            <option value="Cordoba">Córdoba</option>
+            <option value="Cadiz">Cádiz</option>
+            <option value="Malaga">Málaga</option>
+            <option value="Sevilla">Sevilla</option>
+            <option value="Jaen">Jaen</option>
+            <option value="Huelva">Huelva</option>
+        </select>
+    </fieldset>
+    <fieldset style="background-color: rgb(160, 102, 214);">
+        <p>Infomación del curso</p>
+        <input type="radio" id="semipresencial" name="turno" value="semipresencial">
+        <label for="semipresencial">Semipresencial</label>
+
+        <input type="radio" id="presencial" name="turno" value="presencial">
+        <label for="presencial">Presencial</label>
+
+        <input type="radio" id="Online" name="online" value="online">
+        <label for="online">Online</label>
+    </fieldset>
+
+    <fieldset style="background-color: rgb(160, 96, 221);">
+        <p>Interese</p>
+        <p>¿Qué temas te interesan?</p>
+        <input type="checkbox" id="html" name="intereses" value="disenoweb">
+        <label for="disenoweb">Diseño web</label>
+
+        <input type="checkbox" id="html" name="intereses" value="programacion">
+        <label for="programacion">Programación</label>
+
+        <input type="checkbox" id="html" name="intereses" value="basesdedatos">
+        <label for="basesdedatos">Bases de datos</label>
+
+        <input type="checkbox" id="html" name="intereses" value="redes">
+        <label for="redes">Redes</label>
+    </fieldset>
+    <fieldset style="background-color: rgb(165, 105, 221);">
+        <p>Observaciones</p>
+        <label for="Mensaje">Mensaje</label>
+        <textarea id="Mensaje" name="Mensaje" rows="5"></textarea>
+    </fieldset>
+        <button type="submit" style="background-color: aqua;">Enviar</button>
+
+    </form>
+</body>
+</html>

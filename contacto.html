@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nom">
+
+        <label for="Correo">Correo Electrónico</label>
+        <input type="email" id="correo" name="correo">
+
+        <label for="asunto">Asunto</label>
+        <input type="text" id="asunto" name="asunto">
+
+        <label for="Mensaje">Mensaje</label>
+        <textarea id="Mensaje" name="Mensaje" rows="10"></textarea>
+
+         <label for="contrasena">contraseña</label>
+        <input type="password" id="contrasena" name="contrasena">
+
+        <p>¿Qué formación quieres?</p>
+         <input type="radio" id="Presencial" name="turno" value="Presencial">
+        <label for="Presencial">Presencial</label>
+
+        <input type="radio" id="Online" name="turno" value="Online">
+        <label for="Online">Online</label>
+
+        <input type="radio" id="Mixta" name="turno" value="Mixta">
+        <label for="Mixta">Mixta</label>
+
+        <p>¿Qué temas te interesan?</p>
+        <input type="checkbox" id="html" name="intereses" value="disenoweb">
+        <label for="disenoweb">Diseño web</label>
+
+        <input type="checkbox" id="html" name="intereses" value="programacion">
+        <label for="programacion">Programación</label>
+
+        <input type="checkbox" id="html" name="intereses" value="basesdedatos">
+        <label for="basesdedatos">Bases de datos</label>
+
+        <input type="checkbox" id="html" name="intereses" value="redes">
+        <label for="redes">Redes</label>
+
+        <br>
+
+        <label for="pago">Método de pago</label>
+
+        <select id="pago" name="pago">
+            <option value="tarjeta">Tarjeta bancaria</option>
+            <option value="paypal">Paypal</option>
+            <option value="transferencia">transferencia bancaria</option>
+            <option value="efectivo">Efectivo</option>
+        </select>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
