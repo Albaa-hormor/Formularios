@@ -41,21 +41,21 @@
       <div class="fila">
         <div class="campo">
           <label for="habitacion">Selecciona habitación</label>
-            <select id="habitacion" name="habitacion">
-              <option value="individual">Individual</option>
-              <option value="Doble">Doble</option>
-              <option value="Doble2C">Doble 2 camas</option>
-              <option value="Triple">Triple</option>
-              <option value="Cuadruple">Cuádruple</option>
-            </select>
-          </div>
-          <div class="campo">
-            <label for="huespedes">Número de huéspedes</label>
-            <input type="number" id="huespedes" min="1" max="6" />
-          </div>
+          <select id="habitacion" name="habitacion">
+            <option value="individual">Individual</option>
+            <option value="Doble">Doble</option>
+            <option value="Doble2C">Doble 2 camas</option>
+            <option value="Triple">Triple</option>
+            <option value="Cuadruple">Cuádruple</option>
+          </select>
         </div>
-        <label for="fecha">Fecha de llegada</label>
-        <input type="date" id="fecha" />
+        <div class="campo">
+          <label for="huespedes">Número de huéspedes</label>
+          <input type="number" id="huespedes" min="1" max="6" />
+        </div>
+      </div>
+      <label for="fecha">Fecha de llegada</label>
+      <input type="date" id="fecha" />
 
     </fieldset>
     </div>
@@ -91,11 +91,32 @@
 
       <label for="codigocl">Código de Cliente</label>
       <input type="number" id="codigocl" name="codigocl" pattern="[0-9]{6}" title="Introduce seis numeros" required />
-    <label for="observaciones">Observaciones</label>
-     <textarea id="observaciones" name="observaciones" rows="10"></textarea>
+      <label for="observaciones">Observaciones</label>
+      <textarea id="observaciones" name="observaciones" rows="10"></textarea>
     </fieldset>
+
+
+
+
+    <div id="informacion" popover>
+      <h2>Nuestra casa rural</h2>
+
+      <p>Nos encotramos en...</p>
+      <p>situada en plena sierra de Córdoba, con capacidad para 6 personas, que cuenta con tres habitaciones
+        dobles, dos baños completos, un amplio salón-comedor con chimenea de leña, cocina totalmente equipada
+        (lavavajillas, horno, microondas y cafetera), aire acondicionado, calefacción y wifi gratuito; además,
+        en su exterior cuenta con un jardín privado vallado, porche amueblado, zona de barbacoa, piscina con
+        vistas a la montaña y aparcamiento dentro de la propia finca.</p>
+      <button type="button" popovertarget="informacion" popovertargetaction="hide">Cerrar</button>
+    </div>
+
+  
     <button type="submit" class="boton-enviar">Enviar</button>
     <button type="reset" class="boton-borrar">Borrar</button>
+     <button type="button" popovertarget="informacion">
+        Más información
+    </button>
+
   </form>
   <img src="img/book.gif" alt="fotoreserva" style="margin-left: 120px; width: 200px; height: auto" />
 </body>
