@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Activa Córdoba</title>
     <link href="recursos/bootstrap.min.css" rel="stylesheet" />
-    <link href="estilobot.css" rel="stylesheet">
+    <link href="estilobot.css" rel="stylesheet" />
   </head>
+
   <body>
     <nav class="navbar navbar-expand-lg bg-danger">
       <div class="container-fluid">
@@ -54,8 +55,17 @@
       <button type="button" class="btn btn-danger text-warning mt-3">
         Ver Actividades
       </button>
-      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; width: 60%; margin: auto;">
-        <div class="card mt-5" style="width: 18rem">
+      <div
+        style="
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-template-rows: 1fr 1fr;
+          gap: 20px;
+          width: 60%;
+          margin: auto;
+        "
+      >
+        <div class="card mt-5 shadow-lg" style="width: 18rem">
           <img src="mezquita.jpg" class="card-img-top" alt="..." />
           <div class="card-body">
             <h5 class="card-title">Visita Guiada Mezquita Córdoba</h5>
@@ -66,14 +76,48 @@
               colas incluidas o la opción sin entradas para realizar solo la
               visita guiada. ¡La gran joya del arte omeya os espera!
             </p>
-            <a href="#" class="btn btn-primary">Ver detalles</a>
+            <a href="#" class="btn btn-primary">Inscribirme</a>
           </div>
           <span class="badge text-bg-warning">15€</span>
         </div>
-        <div class="card mt-5" style="width: 18rem">
-          <img src="mezquita.jpg" class="card-img-top" alt="mezquita" />
+
+        <div class="card mt-5 shadow-lg" style="width: 18rem">
+          <img src="fotografia.jpg" class="card-img-top" alt="mezquita" />
           <div class="card-body">
-            <h5 class="card-title">Visita Guiada Mezquita Córdoba</h5>
+            <h5 class="card-title">Taller de fotografía</h5>
+            <p class="card-text">
+              Un taller de fotografía es un espacio de aprendizaje creativo
+              donde los participantes descubren los fundamentos de la
+              fotografía, experimentan con la luz, la composición y el encuadre,
+              y desarrollan su mirada artística a través de la práctica,
+              explorando nuevas formas de capturar y expresar la realidad.
+            </p>
+            <a href="#" class="btn btn-primary">Inscribirme</a>
+          </div>
+          <span class="badge text-bg-warning">25€</span>
+        </div>
+
+        <div class="card mt-5 shadow-lg" style="width: 18rem">
+          <img src="senderismo.jpg" class="card-img-top" alt="mezquita" />
+          <div class="card-body">
+            <h5 class="card-title">Senderismo en Sierra Morena</h5>
+            <p class="card-text">
+              El senderismo en Sierra Morena es una experiencia de conexión con
+              la naturaleza que permite descubrir paisajes de gran belleza,
+              recorrer senderos entre bosques, montañas y ríos, y disfrutar de
+              la riqueza de su flora y fauna. Una actividad ideal para
+              desconectar, fomentar el bienestar físico y emocional y compartir
+              momentos al aire libre.
+            </p>
+            <a href="#" class="btn btn-primary">Inscribirme</a>
+          </div>
+          <span class="badge text-bg-warning">12€</span>
+        </div>
+
+        <div class="card mt-5 shadow-lg" style="width: 18rem">
+          <img src="ceramica.jpg" class="card-img-top" alt="mezquita" />
+          <div class="card-body">
+            <h5 class="card-title">Taller de cerámica</h5>
             <p class="card-text">
               Un bello bosque de columnas, un aromático Patio de los Naranjos y
               muchas sorpresas os aguardan en esta visita por la Mezquita de
@@ -81,11 +125,117 @@
               colas incluidas o la opción sin entradas para realizar solo la
               visita guiada. ¡La gran joya del arte omeya os espera!
             </p>
-            <a href="#" class="btn btn-primary">Ver detalles</a>
+            <a href="#" class="btn btn-primary">Inscripcion</a>
           </div>
-          <span class="badge text-bg-warning">15€</span>
+          <span class="badge text-bg-warning">30€</span>
+        </div>
+
+        <div class="card mt-5 shadow-lg" style="width: 18rem">
+          <img src="visitanocturna.jpg" class="card-img-top" alt="mezquita" />
+          <div class="card-body">
+            <h5 class="card-title">Visita nocturna Córdoba</h5>
+            <p class="card-text">
+              Una visita nocturna por Córdoba es una experiencia única para
+              descubrir el encanto de la ciudad bajo la luz de la noche. A
+              través de sus calles, plazas y monumentos iluminados, se recorren
+              la historia, las leyendas y el patrimonio cultural cordobés,
+              disfrutando de una atmósfera mágica que invita a descubrir la
+              ciudad desde otra perspectiva.
+            </p>
+            <a href="#" class="btn btn-primary">Inscripción</a>
+          </div>
+          <span class="badge text-bg-warning">18€</span>
+        </div>
+
+        <div class="card mt-5 shadow-lg" style="width: 18rem">
+          <img src="mezquita.jpg" class="card-img-top" alt="mezquita" />
+          <div class="card-body">
+            <h5 class="card-title">Taller de cocina cordobesa</h5>
+            <p class="card-text">
+              Un taller de cocina cordobesa es una experiencia gastronómica en
+              la que los participantes descubren los sabores tradicionales de la
+              tierra, aprendiendo a elaborar recetas típicas como el salmorejo,
+              el flamenquín o las berenjenas con miel. Una actividad que combina
+              cultura, tradición y convivencia, acercándonos a la esencia de
+              Córdoba a través de su cocina.
+            </p>
+            <a href="#" class="btn btn-primary">Inscripción</a>
+          </div>
+          <span class="badge text-bg-warning">35€</span>
         </div>
       </div>
+
+      <section id="inscripcion" class="container my-5">
+        <h2 class="text-center mb-4">Inscríbete en una actividad</h2>
+        <form action="https://httpbin.org/get" method="get">
+          <div class="mb-3">
+            <label for="correo" class="correo"
+              >Dirección de correo electrónico</label
+            >
+            <input
+              type="email"
+              class="correo"
+              id="correo"
+              placeholder="name@example.com"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="telefono" class="telefono">Número de teléfono</label>
+            <input type="tel" class="telefono" id="telefono" />
+          </div>
+
+          <div class="form-field">
+            <label for="fieldSelect" class="form-label">Actividades</label>
+            <select class="form-control" id="fieldSelect">
+              <option selected>Selecciona una actividad</option>
+              <option value="1">Visita mezquita</option>
+              <option value="2">Taller Fotografía</option>
+              <option value="3">Taller cerámica</option>
+              <option value="4">Senderismo</option>
+              <option value="5">Visita nocturna</option>
+              <option value="6">Taller de cocina</option>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <label for="participantes" class="form-label"
+              >Número de participantes</label
+            >
+            <input
+              type="number"
+              class="form-label"
+              id="participantes"
+              min="1"
+              max="5"
+              required
+            />
+ <p for="radio" class="form-label">Selecciona turno</p>
+
+            <div class="form-field">
+
+             
+
+              <input class="radio" name="radios" type="radio" id="radioLabel" />
+             
+              <label for="radioLabel">Turno de mañana</label>
+            </div>
+          </div>
+          <div class="form-field">
+            <input class="radio" name="radios" type="radio" id="radioLabel2" />
+            <label for="radioLabel2">Turno de tarde</label>
+          </div>
+        </form>
+      </section>
+      <div class="form-field">
+  <label for="Observaciones" class="form-label">Observaciones</label>
+  <textarea class="form-control" id="Observaciones"></textarea>
+</div>
+<div class="form-field">
+  <input type="checkbox" id="checkDisabled" class="check"/>
+  <label for="checkDisabled">Acepta las condiciones</label>
+</div>
+ <button type="submit" class="btn btn-primary">Enviar</button>
+ <button type="reset" class="btn btn-primary">Actualizar</button>
     </main>
     <script src="recursos/bootstrap.min.js"></script>
   </body>
